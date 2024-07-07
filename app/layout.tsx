@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
-
+import BackToTop from "../components/BackToTop";
 export const metadata: Metadata = {
   title: "AFRIQUE AVENIR",
   description: "Page d'accueil d'AFRIQUE AVENIR ",
@@ -28,6 +28,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+          <BackToTop />
         </ThemeProvider>
       </body>
     </html>
