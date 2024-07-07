@@ -21,9 +21,9 @@ export const HeroSection = () => {
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Découvrez
+              <span className="">Découvrez</span>
               <br />
-              <span className=" text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 AFRIQUE AVENIR
               </span>
             </h1>
