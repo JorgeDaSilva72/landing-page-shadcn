@@ -145,12 +145,14 @@ export const Navbar = () => {
                       key={title}
                       className="rounded-md p-3 text-sm hover:bg-muted"
                     >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
+                      <Link href="#services">
+                        <p className="mb-1 font-semibold leading-none text-foreground">
+                          {title}
+                        </p>
+                        <p className="line-clamp-2 text-muted-foreground">
+                          {description}
+                        </p>
+                      </Link>
                     </li>
                   ))}
                 </ul>
