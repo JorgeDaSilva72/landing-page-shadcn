@@ -11,7 +11,7 @@ export const FooterSection = () => {
             <Link href="#" className="flex font-bold items-center">
               <ChevronsUpIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
 
-              <h3 className="text-2xl">AFRIQUE AVENIR</h3>
+              <h3 className=" text-xl md:text-2xl">AFRIQUE AVENIR</h3>
             </Link>
           </div>
 
@@ -79,7 +79,10 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Réseaux sociaux</h3>
+            <h3 className="font-bold text-lg">
+              <span className="block lg:hidden">Réseaux</span>
+              <span className="hidden lg:block">Réseaux sociaux</span>
+            </h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 YouTube
