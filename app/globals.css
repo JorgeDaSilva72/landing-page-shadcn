@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Retire la décoration des liens globalement */
+a {
+  text-decoration: none;
+}
+
 /* *=========== Default theme =========== */
 /* @layer base {
   :root {

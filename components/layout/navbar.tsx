@@ -54,8 +54,8 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Service 1 ",
-    description: "Service 1",
+    title: "Annonces immobilières ",
+    description: " Explorez une variété d'annonces immobilières en AFRIQUE.",
   },
   {
     title: "Service 2",
@@ -64,6 +64,10 @@ const featureList: FeatureProps[] = [
   {
     title: "Service 3",
     description: "Service 3",
+  },
+  {
+    title: "Service 4",
+    description: "Service 4",
   },
 ];
 

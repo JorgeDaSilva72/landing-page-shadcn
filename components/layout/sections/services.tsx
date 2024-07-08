@@ -21,7 +21,7 @@ const serviceList: ServiceProps[] = [
   {
     title: "Annonces immobilières",
     description:
-      "Découvrez notre plateforme d'annonces immobilières dédiée à l'Afrique. Explorez une variété de propriétés, des appartements urbains aux villas luxueuses, et trouvez votre prochain investissement ou résidence idéale sur notre site.",
+      "Découvrez notre plateforme d'annonces immobilières dédiée à l'Afrique. Explorez une variété de propriétés, des appartements aux villas luxueuses, et trouvez votre prochain investissement ou résidence idéale sur notre site.",
     pro: 1,
     link: "https://afrique-avenir-immo.vercel.app",
   },
@@ -48,9 +48,9 @@ const serviceList: ServiceProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
+    <section id="services" className="container py-8 sm:py-16">
       <h2 className="text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider">
-        SERVICES
+        NOS SERVICES
       </h2>
 
       <h2 className="text-xl md:text-2xl text-center font-bold">
@@ -71,21 +71,29 @@ export const ServicesSection = () => {
         {serviceList.map(({ title, description, pro, link }) => (
           <Card
             key={title}
-            className="bg-muted/60 dark:bg-card h-full relative"
+            className="bg-muted/60 dark:bg-card h-full relative flex flex-col"
           >
-            <CardHeader>
+            <CardHeader className="flex-1">
               <CardTitle>{title}</CardTitle>
               <CardDescription>{description}</CardDescription>
+            </CardHeader>
+            <div className="mt-auto mb-4 px-4">
               <CardDescription>
                 <Link
                   target="_blank"
                   href={`${link} `}
-                  className="text-primary transition-all border-primary hover:border-b-2 ml-1"
+                  className=" transition-all border-primary hover:border-b-2 ml-1 no-underline"
                 >
-                  Y aller
+                  <button
+                    type="button"
+                    className="w-full inline-flex justify-center py-2 px-4 border border-primary  shadow-sm text-sm font-medium rounded-md bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                  >
+                    Y aller
+                  </button>
                 </Link>
               </CardDescription>
-            </CardHeader>
+            </div>
+
             <Badge
               data-pro={ProService.YES === pro}
               variant="secondary"
