@@ -78,7 +78,7 @@ const reviewList: ReviewProps[] = [
 
 export const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="container py-8 sm:py-16">
+    <section id="testimonials" className="container pt-24 sm:pt-28">
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider ">
           TEMOIGNAGES

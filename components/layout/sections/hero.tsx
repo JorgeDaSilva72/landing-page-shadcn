@@ -10,7 +10,7 @@ export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-8 sm:py-16">
+      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-16 sm:py-20">
         <div className="text-center space-y-8">
           {/* <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">

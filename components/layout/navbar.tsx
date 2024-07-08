@@ -35,20 +35,43 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#services",
+    label: "Services",
+  },
+  {
     href: "#testimonials",
     label: "Témoignages",
   },
   {
-    href: "#team",
-    label: "Equipe",
+    href: "#faq",
+    label: "FAQ",
   },
+  // {
+  //   href: "#team",
+  //   label: "Equipe",
+  // },
   {
     href: "#contact",
     label: "Contact",
   },
+];
+
+const routeListForDesktop: RouteProps[] = [
+  {
+    href: "#testimonials",
+    label: "Témoignages",
+  },
   {
     href: "#faq",
     label: "FAQ",
+  },
+  // {
+  //   href: "#team",
+  //   label: "Equipe",
+  // },
+  {
+    href: "#contact",
+    label: "Contact",
   },
 ];
 
@@ -165,7 +188,7 @@ export const Navbar = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            {routeList.map(({ href, label }) => (
+            {routeListForDesktop.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
                 <Link href={href} className="text-base px-2">
                   {label}
