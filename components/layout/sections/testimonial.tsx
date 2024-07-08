@@ -34,7 +34,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/kwame Mensah.jpg",
     name: "Kwame Mensah",
     userName: "Ingénieur ",
     comment:
@@ -116,8 +116,8 @@ export const TestimonialSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage src="{review.image}" alt="radix" />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarImage src={review.image} alt="radix" />
+                      <AvatarFallback>SV</AvatarFallback> {review.image}
                     </Avatar>
 
                     <div className="flex flex-col">
