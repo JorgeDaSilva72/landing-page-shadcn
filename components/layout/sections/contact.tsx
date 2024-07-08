@@ -1,6 +1,7 @@
 "use client";
 import { useState, ChangeEvent, FormEvent } from "react";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 
 const schema = z.object({
   name: z.string().min(1, "Nom requis"),
@@ -16,6 +17,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
+
+  const [status, setStatus] = useState("");
 
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>(
     {}
@@ -33,6 +36,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setStatus("Envoi en cours...");
 
     const result = schema.safeParse(formData);
 
@@ -44,7 +48,27 @@ export default function Contact() {
       setErrors(fieldErrors);
       return;
     }
-    alert(JSON.stringify(formData));
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+      );
+
+      setStatus("Message envoyé avec succès!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      setStatus("Échec de l'envoi du message.");
+    }
+
+    // alert(JSON.stringify(formData));
     // const res = await fetch('/api/contact', {
     //   method: 'POST',
     //   headers: {
@@ -136,6 +160,7 @@ export default function Contact() {
         >
           Envoyer
         </button>
+        {status && <p className="text-sm text-red-600 mt-2">{status}</p>}
       </form>
     </section>
   );

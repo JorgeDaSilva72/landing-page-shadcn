@@ -88,7 +88,7 @@ export const ServicesSection = () => {
                     type="button"
                     className="w-full inline-flex justify-center py-2 px-4 border border-primary  shadow-sm text-sm font-medium rounded-md bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
-                    Y aller
+                    Visiter
                   </button>
                 </Link>
               </CardDescription>
