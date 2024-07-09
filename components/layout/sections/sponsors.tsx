@@ -1,6 +1,8 @@
 "use client";
 
+import AdBanner from "@/components/AdBanner";
 import { Icon } from "@/components/ui/icon";
+import { ads } from "@/lib/data";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import { icons } from "lucide-react";
@@ -71,6 +73,16 @@ export const SponsorsSection = () => {
             </div>
           ))}
         </Marquee>
+      </div>
+      <div className="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+        {ads.map((ad, index) => (
+          <AdBanner
+            key={index}
+            imageUrl={ad.imageUrl}
+            linkUrl={ad.linkUrl}
+            altText={ad.altText}
+          />
+        ))}
       </div>
     </section>
   );

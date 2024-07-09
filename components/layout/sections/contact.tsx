@@ -24,6 +24,13 @@ export default function Contact() {
     {}
   );
 
+  const clearErrorsAndStatus = () => {
+    setTimeout(() => {
+      setErrors({});
+      setStatus("");
+    }, 3000);
+  };
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -46,6 +53,8 @@ export default function Contact() {
         fieldErrors[issue.path[0] as keyof FormData] = issue.message;
       }
       setErrors(fieldErrors);
+      setStatus("Erreur de validation des champs.");
+      clearErrorsAndStatus();
       return;
     }
     try {
@@ -64,31 +73,43 @@ export default function Contact() {
 
       setStatus("Message envoyé avec succès!");
       setFormData({ name: "", email: "", message: "" });
+      clearErrorsAndStatus();
     } catch (error) {
       setStatus("Échec de l'envoi du message.");
+      clearErrorsAndStatus();
     }
-
-    // alert(JSON.stringify(formData));
-    // const res = await fetch('/api/contact', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(formData)
-    // });
-
-    // if (res.ok) {
-    //   alert('Message envoyé avec succès!');
-    //   setFormData({
-    //     name: '',
-    //     email: '',
-    //     message: ''
-    //   });
-    //   setErrors({});
-    // } else {
-    //   alert('Erreur lors de l\'envoi du message.');
-    // }
   };
+
+  const getStatusClass = () => {
+    if (status.includes("succès")) {
+      return "text-green-600";
+    } else if (status.includes("Erreur") || status.includes("Échec")) {
+      return "text-red-600";
+    } else {
+      return "text-gray-600";
+    }
+  };
+
+  // alert(JSON.stringify(formData));
+  // const res = await fetch('/api/contact', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify(formData)
+  // });
+
+  // if (res.ok) {
+  //   alert('Message envoyé avec succès!');
+  //   setFormData({
+  //     name: '',
+  //     email: '',
+  //     message: ''
+  //   });
+  //   setErrors({});
+  // } else {
+  //   alert('Erreur lors de l\'envoi du message.');
+  // }
 
   return (
     <section id="contact" className="container md:w-[700px]  pt-24 sm:pt-28">
@@ -160,7 +181,9 @@ export default function Contact() {
         >
           Envoyer
         </button>
-        {status && <p className="text-sm text-red-600 mt-2">{status}</p>}
+        {status && (
+          <p className={`text-sm mt-2 ${getStatusClass()}`}>{status}</p>
+        )}
       </form>
     </section>
   );
