@@ -86,7 +86,7 @@ export default function Contact() {
     } else if (status.includes("Erreur") || status.includes("Échec")) {
       return "text-red-600";
     } else {
-      return "text-gray-600";
+      return "";
     }
   };
 

@@ -12,7 +12,7 @@ const AdBanner: React.FC<AdBannerProps> = ({ imageUrl, linkUrl, altText }) => {
   return (
     <div className="my-4 text-center">
       <Link
-        target="_blank"
+        // target="_blank"
         href={`${linkUrl} `}
         className=" transition-all  ml-1 "
         rel="noopener noreferrer"
