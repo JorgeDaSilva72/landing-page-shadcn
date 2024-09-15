@@ -5,6 +5,7 @@ import { FAQSection } from "@/components/layout/sections/faq";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { ServicesSection } from "@/components/layout/sections/services";
 import Contact from "@/components/layout/sections/contact";
+import { TeamSection } from "@/components/layout/sections/team";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <SponsorsSection />
       <ServicesSection />
       <TestimonialSection />
+      <TeamSection />
       <FAQSection />
       <Contact />
       <FooterSection />

@@ -26,11 +26,11 @@ const serviceList: ServiceProps[] = [
     link: "https://afrique-avenir-immo.vercel.app",
   },
   {
-    title: "Service 2",
+    title: "Votre réseau, à portée de clic !",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "Découvrez les talents, les experts et les partenaires qui font avancer votre secteur. Grâce à notre annuaire professionnel, connectez-vous facilement aux acteurs clés de votre domaine, développez votre réseau et trouvez les contacts essentiels pour dynamiser vos projets et collaborations.",
     pro: 0,
-    link: "https://afrique-avenir-immo.vercel.app",
+    link: "https://annuaire-expert.vercel.app/",
   },
   {
     title: "Service 3",

@@ -43,13 +43,14 @@ const routeList: RouteProps[] = [
     label: "Témoignages",
   },
   {
+    href: "#team",
+    label: "Equipe",
+  },
+  {
     href: "#faq",
     label: "FAQ",
   },
-  // {
-  //   href: "#team",
-  //   label: "Equipe",
-  // },
+
   {
     href: "#contact",
     label: "Contact",
@@ -62,13 +63,14 @@ const routeListForDesktop: RouteProps[] = [
     label: "Témoignages",
   },
   {
+    href: "#team",
+    label: "Equipe",
+  },
+  {
     href: "#faq",
     label: "FAQ",
   },
-  // {
-  //   href: "#team",
-  //   label: "Equipe",
-  // },
+
   {
     href: "#contact",
     label: "Contact",
@@ -81,8 +83,8 @@ const featureList: FeatureProps[] = [
     description: " Explorez une variété d'annonces immobilières en AFRIQUE.",
   },
   {
-    title: "Service 2",
-    description: "Service 2",
+    title: "Annuaire professionnel",
+    description: "Votre réseau, à portée de clic !",
   },
   {
     title: "Service 3",
