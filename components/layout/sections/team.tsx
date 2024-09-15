@@ -197,7 +197,7 @@ export const TeamSection = () => {
         </h2> */}
 
         <h2 className="text-xl md:text-2xl text-center font-bold">
-          Rencontrez l'équipe qui donne vie à vos ambitions !
+          Rencontrez l`&apos;`équipe qui donne vie à vos ambitions !
         </h2>
       </div>
 
