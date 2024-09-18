@@ -6,6 +6,7 @@ import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { ServicesSection } from "@/components/layout/sections/services";
 import Contact from "@/components/layout/sections/contact";
 import { TeamSection } from "@/components/layout/sections/team";
+import { CommunitySection } from "@/components/layout/sections/community";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesSection />
       <TestimonialSection />
       <TeamSection />
+      <CommunitySection />
       <FAQSection />
       <Contact />
       <FooterSection />
