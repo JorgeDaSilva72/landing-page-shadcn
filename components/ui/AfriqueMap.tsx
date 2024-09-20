@@ -35,8 +35,6 @@ const AfriqueMap: React.FC = () => {
       dragend() {
         const marker = markerRef.current;
         if (marker != null) {
-          // setPosition(marker.getLatLng())
-          //console.log(marker.getLatLng());
         }
       },
     }),
