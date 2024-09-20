@@ -1,4 +1,5 @@
 "use client";
+import AfriqueMap from "@/components/ui/AfriqueMap";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -42,7 +43,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative group mt-14">
+        {/* <div className="relative group mt-14">
           <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
           <Image
             width={1200}
@@ -57,6 +58,13 @@ export const HeroSection = () => {
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
+
+         
+        </div> */}
+
+        {/* <div className="max-w-screen-md  h-[600px] md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"> */}
+        <div className="max-w-screen-md  h-[600px] md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center">
+          <AfriqueMap />
         </div>
       </div>
     </section>
