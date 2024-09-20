@@ -1,5 +1,6 @@
 "use client";
-import AfriqueMap from "@/components/ui/AfriqueMap";
+
+import { LeafletMap } from "@/components/LeafletMap";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -64,7 +65,7 @@ export const HeroSection = () => {
 
         {/* <div className="max-w-screen-md  h-[600px] md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"> */}
         <div className="max-w-screen-md  h-[600px] md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center">
-          <AfriqueMap />
+          <LeafletMap />
         </div>
       </div>
     </section>
