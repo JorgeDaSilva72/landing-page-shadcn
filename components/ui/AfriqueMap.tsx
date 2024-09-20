@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Polygon, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -22,6 +22,13 @@ const AfriqueMap: React.FC = () => {
   //     [12.0, -15.0],
   //     [12.0, -17.0],
   //   ];
+
+  // pour le deploiement
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Code qui utilise window
+    }
+  }, []);
   return (
     <div className=" mx-auto ">
       {/* <h1>Carte Interactive de l'Afrique</h1> */}
