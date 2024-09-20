@@ -36,7 +36,7 @@ const AfriqueMap: React.FC = () => {
         const marker = markerRef.current;
         if (marker != null) {
           // setPosition(marker.getLatLng())
-          console.log(marker.getLatLng());
+          //console.log(marker.getLatLng());
         }
       },
     }),
@@ -44,7 +44,7 @@ const AfriqueMap: React.FC = () => {
   );
   useEffect(() => {
     console.log(markerRef.current);
-  }, [markerRef.current]);
+  }, []);
 
   return (
     <div className=" mx-auto ">
