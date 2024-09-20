@@ -52,7 +52,7 @@ const AfriqueMap: React.FC = () => {
         center={[1.5, 17]}
         zoom={3}
         scrollWheelZoom={false}
-        style={{ height: "500px", width: "100%" }}
+        style={{ height: "500px", width: "100%", zIndex: 0 }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
