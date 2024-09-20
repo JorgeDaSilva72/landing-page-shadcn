@@ -105,7 +105,7 @@ export const Navbar = () => {
         AFRIQUE AVENIR
       </Link>
       {/* <!-- Mobile --> */}
-      <div className="flex items-center lg:hidden">
+      <div className="flex items-center lg:hidden z-99999">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Menu

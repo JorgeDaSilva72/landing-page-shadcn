@@ -19,7 +19,7 @@ L.Icon.Default.mergeOptions({
 });
 
 // Définissez un type pour les coordonnées
-type LatLngTuple = [number, number];
+// type LatLngTuple = [number, number];
 
 const AfriqueMap: React.FC = () => {
   // Coordonnées pour le Sénégal
@@ -27,32 +27,32 @@ const AfriqueMap: React.FC = () => {
   //     [14.0, -17.0],
   //     [14.0, -15.0],
   //     [12.0, -15.0],
-  //     [12.0, -17.0],
+  //     [12.0, -17.0],const eventHandlers = useMemo(
   //   ];
 
-  const markerRef = useRef(null);
-  const eventHandlers = useMemo(
-    () => ({
-      dragend() {
-        const marker = markerRef.current;
-        if (marker != null) {
-        }
-      },
-    }),
-    []
-  );
-  useEffect(() => {
-    console.log(markerRef.current);
-  }, []);
+  // const markerRef = useRef(null);
+
+  // () => ({
+  //   dragend() {
+  //     const marker = markerRef.current;
+  //     if (marker != null) {
+  //     }
+  //   },
+  // }),
+  //   [];
+  // );
+  // useEffect(() => {
+  //   console.log(markerRef.current);
+  // }, []);
 
   return (
-    <div className=" mx-auto ">
+    <div className="z-0">
       {/* <h1>Carte Interactive de l'Afrique</h1> */}
       <MapContainer
         center={[1.5, 17]}
         zoom={3}
         scrollWheelZoom={false}
-        style={{ height: "600px", width: "400px" }}
+        style={{ height: "500px", width: "100%" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -63,14 +63,15 @@ const AfriqueMap: React.FC = () => {
           <Popup>Sénégal</Popup>
         </Polygon> */}
         {/* Ajoutez d'autres polygones pour d'autres pays ici */}
-        <Marker
+        {/* <Marker
           eventHandlers={eventHandlers}
           position={[40.8054, -74.0241]}
           draggable={true}
           ref={markerRef}
         >
           <Popup>Hey ! you found me</Popup>
-        </Marker>
+        </Marker> */}
+        {/* </MapContainer> */}
       </MapContainer>
     </div>
   );
