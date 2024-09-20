@@ -1,5 +1,11 @@
-import React, { useEffect } from "react";
-import { MapContainer, TileLayer, Polygon, Popup } from "react-leaflet";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useMemo,
+  useCallback,
+} from "react";
+import { MapContainer, TileLayer, Polygon, Popup, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
@@ -23,18 +29,30 @@ const AfriqueMap: React.FC = () => {
   //     [12.0, -17.0],
   //   ];
 
-  // pour le deploiement
+  const markerRef = useRef(null);
+  const eventHandlers = useMemo(
+    () => ({
+      dragend() {
+        const marker = markerRef.current;
+        if (marker != null) {
+          // setPosition(marker.getLatLng())
+          console.log(marker.getLatLng());
+        }
+      },
+    }),
+    []
+  );
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Code qui utilise window
-    }
-  }, []);
+    console.log(markerRef.current);
+  }, [markerRef.current]);
+
   return (
     <div className=" mx-auto ">
       {/* <h1>Carte Interactive de l'Afrique</h1> */}
       <MapContainer
         center={[1.5, 17]}
         zoom={3}
+        scrollWheelZoom={false}
         style={{ height: "600px", width: "400px" }}
       >
         <TileLayer
@@ -46,6 +64,14 @@ const AfriqueMap: React.FC = () => {
           <Popup>Sénégal</Popup>
         </Polygon> */}
         {/* Ajoutez d'autres polygones pour d'autres pays ici */}
+        <Marker
+          eventHandlers={eventHandlers}
+          position={[40.8054, -74.0241]}
+          draggable={true}
+          ref={markerRef}
+        >
+          <Popup>Hey ! you found me</Popup>
+        </Marker>
       </MapContainer>
     </div>
   );
