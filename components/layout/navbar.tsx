@@ -87,8 +87,8 @@ const featureList: FeatureProps[] = [
     description: "Votre réseau, à portée de clic !",
   },
   {
-    title: "Service 3",
-    description: "Service 3",
+    title: "Boutique officielle",
+    description: "Merci de supporter notre projet.",
   },
   {
     title: "Service 4",

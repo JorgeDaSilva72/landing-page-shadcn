@@ -33,10 +33,11 @@ const serviceList: ServiceProps[] = [
     link: "https://annuaire-expert.vercel.app/",
   },
   {
-    title: "Service 3",
-    description: "Lorem dolor sit amet adipisicing.",
+    title: "Notre boutique officielle",
+    description:
+      "Ensemble, bâtissons l'avenir de l'Afrique : chaque achat soutient des projets de développement durable et d'impact local.",
     pro: 0,
-    link: "https://afrique-avenir-immo.vercel.app",
+    link: "https://jds-ecommerce.vercel.app/",
   },
   {
     title: "Service 4",
