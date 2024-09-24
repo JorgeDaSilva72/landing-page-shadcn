@@ -7,13 +7,21 @@ const BackToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       if (window.scrollY > 400) {
         setShowTopBtn(true);
       } else {
         setShowTopBtn(false);
       }
-    });
+    };
+
+    // Ajout de l'événement de défilement
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyage de l'événement lorsque le composant est démonté
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const { theme } = useTheme();
