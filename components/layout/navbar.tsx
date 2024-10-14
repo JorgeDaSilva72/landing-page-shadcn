@@ -109,7 +109,9 @@ export const Navbar = () => {
           height={36} // Hauteur de l'image
           className="rounded-lg"
         />
-        AFRIQUE AVENIR
+        <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+          AFRIQUE AVENIR
+        </span>
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden z-999">
@@ -128,8 +130,9 @@ export const Navbar = () => {
             <div>
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
+                  <Link href="/" className="flex items-center  ">
                     {/* <ChevronsUp className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
+
                     <Image
                       src="/logo-topaz-enhance-coupe.jpeg"
                       alt="Logo"
@@ -137,7 +140,10 @@ export const Navbar = () => {
                       height={36} // Hauteur de l'image
                       className="rounded-lg"
                     />
-                    AFRIQUE AVENIR
+
+                    <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+                      AFRIQUE AVENIR
+                    </span>
                   </Link>
                 </SheetTitle>
               </SheetHeader>

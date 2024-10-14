@@ -6,10 +6,14 @@ import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 import BackToTop from "../components/BackToTop";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "AFRIQUE AVENIR",
   description: "Page d'accueil d'AFRIQUE AVENIR ",
+  icons: {
+    icon: "/favicon.ico", // Chemin vers ton favicon
+  },
 };
 
 export default function RootLayout({

@@ -19,7 +19,9 @@ export const FooterSection = () => {
                 className="rounded-lg"
               />
 
-              <h3 className=" text-xl md:text-2xl">AFRIQUE AVENIR</h3>
+              <h2 className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+                AFRIQUE AVENIR
+              </h2>
             </Link>
           </div>
 
