@@ -25,8 +25,9 @@ export const TeamSection = () => {
   const teamList: TeamProps[] = [
     {
       // imageUrl: "https://i.pravatar.cc/250?img=58",
-      imageUrl:
-        "https://scontent.fcdg1-1.fna.fbcdn.net/v/t39.30808-1/417458750_10224126368733054_8524091925298616823_n.jpg?stp=c0.180.1080.1080a_dst-jpg_s200x200&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=_MyFDh4eHjYQ7kNvgH6Vb1s&_nc_ht=scontent.fcdg1-1.fna&_nc_gid=AvwI_sHVNTh0-X0rQIApK7w&oh=00_AYCGxvc4eaqVtL8alP4GPA-raeyEq2yhVNnv14xqLf8U8g&oe=66EC8C5B",
+      imageUrl: "/Herve Krist.jpg",
+
+      // "https://scontent.fcdg1-1.fna.fbcdn.net/v/t39.30808-1/417458750_10224126368733054_8524091925298616823_n.jpg?stp=c0.180.1080.1080a_dst-jpg_s200x200&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=_MyFDh4eHjYQ7kNvgH6Vb1s&_nc_ht=scontent.fcdg1-1.fna&_nc_gid=AvwI_sHVNTh0-X0rQIApK7w&oh=00_AYCGxvc4eaqVtL8alP4GPA-raeyEq2yhVNnv14xqLf8U8g&oe=66EC8C5B",
       firstName: "Herve",
       lastName: "Krist",
       positions: ["Directeur Général", "CEO – Chief Executive Officer"],

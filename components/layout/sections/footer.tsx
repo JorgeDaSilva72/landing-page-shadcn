@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { ChevronsUpIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const FooterSection = () => {
@@ -9,7 +10,14 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsUpIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+              {/* <ChevronsUpIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" /> */}
+              <Image
+                src="/logo-topaz-enhance-coupe.jpeg"
+                alt="Icone"
+                width={36} // Largeur de l'image
+                height={36} // Hauteur de l'image
+                className="rounded-lg"
+              />
 
               <h3 className=" text-xl md:text-2xl">AFRIQUE AVENIR</h3>
             </Link>

@@ -40,10 +40,11 @@ const serviceList: ServiceProps[] = [
     link: "https://jds-ecommerce.vercel.app/",
   },
   {
-    title: "Service 4",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "Votre Carrière, Notre Mission.",
+    description:
+      "Avec Emploi Afrique, accédez aux meilleures offres d'emploi à travers l'Afrique. Découvrez des opportunités dans des secteurs en plein essor et trouvez l’emploi qui correspond à vos ambitions. Simple, rapide, et pensé pour les talents africains !. ",
     pro: 1,
-    link: "https://afrique-avenir-immo.vercel.app",
+    link: "https://emploi-afrique.vercel.app/",
   },
 ];
 
