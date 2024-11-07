@@ -44,8 +44,7 @@ export const TeamSection = () => {
       ],
     },
     {
-      imageUrl:
-        "https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.18169-1/223349_1874168707968_6477707_n.jpg?stp=c14.14.172.172a_dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=e4545e&_nc_ohc=DkPaWFGmCJ4Q7kNvgE2H1-h&_nc_ht=scontent.fcdg1-1.fna&oh=00_AYCHFXn03dnefPmHDEHGb9pv8SD9hR2tZkr-5uODTCVBww&oe=670E40CB",
+      imageUrl: "/jorge.webp",
       firstName: "Jorge",
       lastName: "Da Silva",
       positions: ["Directeur Technique", "CTO – Chief Technology Officer"],

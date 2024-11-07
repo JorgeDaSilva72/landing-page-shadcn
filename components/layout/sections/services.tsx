@@ -58,7 +58,7 @@ export const ServicesSection = () => {
       <h2 className="text-xl md:text-2xl text-center font-bold">
         Développez votre entreprise
       </h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+      <h3 className="mt-2 md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
         Boostez le potentiel de votre entreprise en Afrique avec notre
         plateforme dédiée. Profitez de conseils spécialisés, de ressources
         stratégiques et d&apos;un réseau de partenaires pour stimuler votre

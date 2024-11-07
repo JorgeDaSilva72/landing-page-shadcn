@@ -1,5 +1,6 @@
 "use client";
 import { useState, ChangeEvent, FormEvent } from "react";
+
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 
@@ -23,6 +24,8 @@ export default function Contact() {
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>(
     {}
   );
+
+  const [focusedField, setFocusedField] = useState<string | null>(null); // État pour le champ en focus
 
   const clearErrorsAndStatus = () => {
     setTimeout(() => {
@@ -90,27 +93,6 @@ export default function Contact() {
     }
   };
 
-  // alert(JSON.stringify(formData));
-  // const res = await fetch('/api/contact', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json'
-  //   },
-  //   body: JSON.stringify(formData)
-  // });
-
-  // if (res.ok) {
-  //   alert('Message envoyé avec succès!');
-  //   setFormData({
-  //     name: '',
-  //     email: '',
-  //     message: ''
-  //   });
-  //   setErrors({});
-  // } else {
-  //   alert('Erreur lors de l\'envoi du message.');
-  // }
-
   return (
     <section id="contact" className="container md:w-[700px]  pt-24 sm:pt-28">
       <div className="text-center mb-8">
@@ -135,7 +117,7 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 p-2 block w-full shadow-sm sm:text-sm border border-gray-600 rounded-md"
+            className="mt-1 p-2 block w-full shadow-sm sm:text-sm border border-gray-600 rounded-md focus:border-orange-500"
           />
           {errors.name && (
             <p className="text-red-500 text-sm mt-1">{errors.name}</p>
