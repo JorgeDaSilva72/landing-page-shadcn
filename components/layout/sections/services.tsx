@@ -5,18 +5,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 import Link from "next/link";
 
 enum ProService {
   YES = 1,
   NO = 0,
 }
+
 interface ServiceProps {
   title: string;
   pro: ProService;
   description: string;
   link: string;
 }
+
 const serviceList: ServiceProps[] = [
   {
     title: "Annonces immobilières",
@@ -42,9 +45,16 @@ const serviceList: ServiceProps[] = [
   {
     title: "Votre Carrière, Notre Mission.",
     description:
-      "Avec Emploi Afrique, accédez aux meilleures offres d'emploi à travers l'Afrique. Découvrez des opportunités dans des secteurs en plein essor et trouvez l’emploi qui correspond à vos ambitions. Simple, rapide, et pensé pour les talents africains !. ",
+      "Avec Emploi Afrique, accédez aux meilleures offres d'emploi à travers l'Afrique. Découvrez des opportunités dans des secteurs en plein essor et trouvez l’emploi qui correspond à vos ambitions. Simple, rapide, et pensé pour les talents africains !",
     pro: 1,
     link: "https://emploi-afrique.vercel.app/",
+  },
+  {
+    title: "Opportunités d'Acquisition en Afrique",
+    description:
+      "Investissez en toute confiance en Afrique grâce à notre plateforme dédiée à l'acquisition d'entreprises innovantes.",
+    pro: 1,
+    link: "",
   },
 ];
 
@@ -55,20 +65,37 @@ export const ServicesSection = () => {
         NOS SERVICES
       </h2>
 
-      <h2 className="text-xl md:text-2xl text-center font-bold">
-        Développez votre entreprise
-      </h2>
-      <h3 className="mt-2 md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Boostez le potentiel de votre entreprise en Afrique avec notre
-        plateforme dédiée. Profitez de conseils spécialisés, de ressources
-        stratégiques et d&apos;un réseau de partenaires pour stimuler votre
-        croissance sur ce continent dynamique. Que vous soyez une entreprise
-        établie ou une start-up ambitieuse, trouvez ici le soutien nécessaire
-        pour naviguer efficacement dans le marché africain et concrétiser vos
-        ambitions de développement.
-      </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      {/* Section d'introduction avec texte et image */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8 mb-8">
+        {/* Partie texte */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-xl lg:text-2xl font-bold">
+            Développez votre entreprise
+          </h2>
+          <h3 className="mt-2 mx-auto lg:mx-0 text-xl text-muted-foreground">
+            Boostez le potentiel de votre entreprise en Afrique avec notre
+            plateforme dédiée. Profitez de conseils spécialisés, de ressources
+            stratégiques et d&apos;un réseau de partenaires pour stimuler votre
+            croissance sur ce continent dynamique. Que vous soyez une entreprise
+            établie ou une start-up ambitieuse, trouvez ici le soutien
+            nécessaire pour naviguer efficacement dans le marché africain et
+            concrétiser vos ambitions de développement.
+          </h3>
+        </div>
 
+        {/* Partie image */}
+        <div className="flex justify-center lg:w-1/2">
+          <Image
+            src="/africa.jpg"
+            alt="Afrique"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg w-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Liste des services */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
         {serviceList.map(({ title, description, pro, link }) => (
           <Card
@@ -83,12 +110,12 @@ export const ServicesSection = () => {
               <CardDescription>
                 <Link
                   target="_blank"
-                  href={`${link} `}
-                  className=" transition-all border-primary hover:border-b-2 ml-1 no-underline"
+                  href={link}
+                  className="transition-all border-primary hover:border-b-2 ml-1 no-underline"
                 >
                   <button
                     type="button"
-                    className="w-full inline-flex justify-center py-2 px-4 border border-primary  shadow-sm text-sm font-medium rounded-md bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                    className="w-full inline-flex justify-center py-2 px-4 border border-primary shadow-sm text-sm font-medium rounded-md bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
                     Visiter
                   </button>

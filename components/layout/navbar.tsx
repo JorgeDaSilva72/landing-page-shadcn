@@ -94,6 +94,11 @@ const featureList: FeatureProps[] = [
     title: "Votre Carrière, Notre Mission.",
     description: "Découvrez l’Avenir de l’Emploi en Afrique. ",
   },
+  {
+    title: "Opportunités d'Acquisition en Afrique",
+    description:
+      "L'Afrique Vous Attends : Simplifiez l'Acquisition d'Entreprises Locales.",
+  },
 ];
 
 export const Navbar = () => {

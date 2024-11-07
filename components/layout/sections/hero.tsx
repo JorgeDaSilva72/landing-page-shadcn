@@ -140,7 +140,7 @@ export const HeroSection = () => {
       }`}
     >
       {/* Superposition en dégradé pour améliorer la lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/10"></div>
 
       {/* Contenu de la section */}
       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-16 sm:py-20">
