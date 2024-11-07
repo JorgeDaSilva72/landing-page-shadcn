@@ -182,7 +182,12 @@ export const HeroSection = () => {
 
   const scrollToSection = () => {
     const targetElement = document.getElementById("sponsors");
-    targetElement.scrollIntoView({ behavior: "smooth" });
+    if (targetElement) {
+      // Vérification si l'élément existe
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn('Element with ID "next-section" not found.');
+    }
   };
 
   return (
