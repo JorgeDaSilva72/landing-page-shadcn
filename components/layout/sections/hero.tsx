@@ -171,9 +171,68 @@
 //     </section>
 //   );
 // };
-import { ArrowRight } from "lucide-react";
-import { ArrowDown } from "lucide-react"; // Flèche vers le bas
+// import { ArrowRight } from "lucide-react";
+// import { ArrowDown } from "lucide-react"; // Flèche vers le bas
 
+// import { useTheme } from "next-themes";
+// import { Button } from "@/components/ui/button";
+
+// export const HeroSection = () => {
+//   const { theme } = useTheme();
+
+//   const scrollToSection = () => {
+//     const targetElement = document.getElementById("sponsors");
+//     if (targetElement) {
+//       // Vérification si l'élément existe
+//       targetElement.scrollIntoView({ behavior: "smooth" });
+//     } else {
+//       console.warn('Element with ID "next-section" not found.');
+//     }
+//   };
+
+//   return (
+//     <section
+//       className={`relative w-full h-screen bg-cover bg-center bg-no-repeat transition-all duration-500 ${
+//         theme === "light"
+//           ? "bg-[url('/africa-light.jpg')]"
+//           : "bg-[url('/africa-dark.jpg')]"
+//       }` }
+//     >
+//       {/* Superposition en dégradé pour améliorer la lisibilité */}
+//       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20"></div>
+
+//       {/* Contenu de la section */}
+//       <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-16 sm:py-20">
+//         <div className="text-center space-y-8">
+//           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-extrabold text-white tracking-wide">
+//             <h1 className="leading-tight">
+//               <span>Découvrez</span>
+//               <br />
+//               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-[#4e2a84] bg-clip-text">
+//                 AFRIQUE AVENIR
+//               </span>
+//             </h1>
+//           </div>
+
+//           <p className="max-w-screen-sm mx-auto text-xl text-gray-200 leading-relaxed">
+//             {`L'avenir de l'Afrique : innovations, opportunités et inspirations pour bâtir un continent prospère.`}
+//           </p>
+
+//           <div className="space-y-4 md:space-y-0 md:space-x-4">
+//             <Button
+//               onClick={scrollToSection}
+//               className="w-5/6 md:w-1/4 font-bold group/arrow transition-all transform hover:scale-105 duration-300"
+//             >
+//               Commençons
+//               <ArrowDown className="size-5 ml-2 group-hover/arrow:translate-y-1 transition-all animate-bounce" />
+//             </Button>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+import { ArrowDown } from "lucide-react"; // Flèche vers le bas
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
@@ -183,20 +242,26 @@ export const HeroSection = () => {
   const scrollToSection = () => {
     const targetElement = document.getElementById("sponsors");
     if (targetElement) {
-      // Vérification si l'élément existe
       targetElement.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.warn('Element with ID "next-section" not found.');
+      console.warn('Element with ID "sponsors" not found.');
     }
   };
 
   return (
     <section
-      className={`relative w-full h-screen bg-cover bg-center bg-no-repeat transition-all duration-500 ${
-        theme === "light"
-          ? "bg-[url('/africa-light.jpg')]"
-          : "bg-[url('/africa-dark.jpg')]"
-      }`}
+      className="relative w-full h-screen bg-no-repeat bg-center bg-cover"
+      style={{
+        // Sélectionner l'image en fonction du thème
+        backgroundImage: `url('${
+          theme === "light" ? "/africa-light.jpg" : "/africa-dark.jpg"
+        }')`,
+        backgroundSize: "cover", // Cela garantit que l'image couvre toute la section
+        backgroundPosition: "center", // Centrer l'image
+        backgroundRepeat: "no-repeat", // Assurer que l'image ne se répète pas
+        backgroundAttachment: "fixed", // (Optionnel) Fixer l'image pour un effet de parallaxe
+        backgroundColor: "black", // Ajout d'un fond noir au cas où l'image ne charge pas
+      }}
     >
       {/* Superposition en dégradé pour améliorer la lisibilité */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20"></div>
