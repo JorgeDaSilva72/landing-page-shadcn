@@ -6,6 +6,8 @@ import { ads } from "@/lib/data";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import { icons } from "lucide-react";
+import TopWave from "./topWave";
+import BottomWave from "./bottomWave";
 interface sponsorsProps {
   icon: string;
   name: string;
@@ -44,8 +46,12 @@ const sponsors: sponsorsProps[] = [
 
 export const SponsorsSection = () => {
   return (
-    <section id="sponsors" className="max-w-[75%] mx-auto  py-24 sm:py-28">
-      <h2 className=" mb-6 text-3xl md:text-4xl text-primary text-center  tracking-wider">
+    <section
+      id="sponsors"
+      className="relative mt-1 max-w-[75%] mx-auto  py-24 sm:py-28 pb-40"
+    >
+      <TopWave />
+      <h2 className=" mt-2 mb-6 text-3xl md:text-4xl text-primary text-center  tracking-wider ">
         NOS SPONSORS
       </h2>
 
@@ -84,6 +90,7 @@ export const SponsorsSection = () => {
           />
         ))}
       </div>
+      <BottomWave />
     </section>
   );
 };

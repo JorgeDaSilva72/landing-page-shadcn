@@ -15,6 +15,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import TopWave from "./topWave";
+import BottomWave from "./bottomWave";
 
 interface ReviewProps {
   image: string;
@@ -78,9 +80,13 @@ const reviewList: ReviewProps[] = [
 
 export const TestimonialSection = () => {
   return (
-    <section id="testimonials" className="container pt-24 sm:pt-28">
+    <section
+      id="testimonials"
+      className="container relative mt-24 pt-24 sm:pt-28 pb-40"
+    >
+      <TopWave />
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider ">
+        <h2 className="mt-2 text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider ">
           TEMOIGNAGES
         </h2>
 
@@ -133,6 +139,7 @@ export const TestimonialSection = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <BottomWave />
     </section>
   );
 };

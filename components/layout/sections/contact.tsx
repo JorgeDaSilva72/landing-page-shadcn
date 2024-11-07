@@ -3,6 +3,8 @@ import { useState, ChangeEvent, FormEvent } from "react";
 
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
+import TopWave from "./topWave";
+import BottomWave from "./bottomWave";
 
 const schema = z.object({
   name: z.string().min(1, "Nom requis"),
@@ -94,8 +96,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="container md:w-[700px]  pt-24 sm:pt-28">
-      <div className="text-center mb-8">
+    <section
+      id="contact"
+      className="container relative md:w-[700px]  pt-24 sm:pt-28 pb-40"
+    >
+      {/* Liseré ondulé en haut de la section */}
+      <TopWave />
+      <div className="pt-2 text-center mb-8">
         <h2 className="text-3xl md:text-4xl text-primary text-center mb-2 tracking-wider ">
           CONTACTEZ-NOUS
         </h2>
@@ -167,6 +174,8 @@ export default function Contact() {
           <p className={`text-sm mt-2 ${getStatusClass()}`}>{status}</p>
         )}
       </form>
+      {/* Liseré ondulé en bas de la section, inversé */}
+      <BottomWave />
     </section>
   );
 }
