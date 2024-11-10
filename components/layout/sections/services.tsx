@@ -54,7 +54,7 @@ const serviceList: ServiceProps[] = [
     description:
       "Investissez en toute confiance en Afrique grâce à notre plateforme dédiée à l'acquisition d'entreprises innovantes.",
     pro: 1,
-    link: "",
+    link: "https://afrique-avenir-acquisitions.vercel.app/",
   },
 ];
 
