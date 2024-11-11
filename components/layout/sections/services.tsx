@@ -84,13 +84,13 @@ export const ServicesSection = () => {
         </div>
 
         {/* Partie image */}
-        <div className="flex justify-center lg:w-1/2">
+        <div className="flex justify-center lg:w-1/2 overflow-hidden">
           <Image
-            src="/africa.jpg"
+            src="/africa-rogné.jpg"
             alt="Afrique"
             width={600}
-            height={400}
-            className="rounded-lg shadow-lg w-full object-cover"
+            height={240}
+            className="rounded-lg shadow-lg w-full object-cover object-center " // Hauteur fixe pour rognage vertical
           />
         </div>
       </div>

@@ -158,3 +158,72 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 50;
+  }
+  80% {
+    fill: transparent;
+
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: hsl(var(--primary));
+
+    stroke-dashoffset: 0;
+  }
+}
+/* Applique l'animation zoom et mouvement sur l'image de fond */
+@keyframes backgroundMove {
+  0% {
+    transform: scale(
+      1.2
+    ); /* L'image commence plus grande, comme venant de l'arrière */
+    background-position: center;
+  }
+  100% {
+    transform: scale(1); /* L'image se réduit à sa taille normale */
+    background-position: center; /* L'image reste centrée */
+  }
+}
+
+/* Application de l'animation à l'image de fond */
+.hero-background {
+  animation: backgroundMove 5s ease-out forwards; /* Animation sur 5 secondes, avec un easing pour un mouvement fluide */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Parallaxe : image ne bouge pas avec le défilement */
+  backgroundcolor: "black";
+}
+/* Dans votre fichier CSS */
+@media (min-width: 640px) {
+  .svg-responsive {
+    width: 24rem; /* 32 Tailwind units */
+  }
+}
+@media (min-width: 768px) {
+  .svg-responsive {
+    width: 30rem; /* 48 Tailwind units */
+  }
+}
+@media (min-width: 1024px) {
+  .svg-responsive {
+    width: 36rem; /* 60 Tailwind units */
+  }
+}
+@media (min-width: 1280px) {
+  .svg-responsive {
+    width: 40rem; /* 72 Tailwind units */
+  }
+}
