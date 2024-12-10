@@ -313,10 +313,10 @@ export const HeroSection = () => {
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button
               onClick={scrollToSection}
-              className="w-5/6 md:w-1/4 font-bold group/arrow transition-all transform hover:scale-105 duration-300"
+              className=" w-5/6 md:w-1/4 font-bold group transition-all transform hover:scale-105 duration-300"
             >
               Commençons
-              <ArrowDown className="size-5 ml-2 group-hover/arrow:translate-y-1 transition-all animate-bounce" />
+              <ArrowDown className="w-5 h-5 bg-white  ml-2 group-hover/arrow:translate-y-1 transition-all animate-bounce" />
             </Button>
           </div>
         </div>

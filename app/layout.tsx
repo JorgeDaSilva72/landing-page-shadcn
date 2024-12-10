@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <Head>
+      {/* <Head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      </Head>
+      </Head> */}
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"

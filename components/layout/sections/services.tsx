@@ -26,7 +26,8 @@ const serviceList: ServiceProps[] = [
     description:
       "Découvrez notre plateforme d'annonces immobilières dédiée à l'Afrique. Explorez une variété de propriétés, des appartements aux villas luxueuses, et trouvez votre prochain investissement ou résidence idéale sur notre site.",
     pro: 1,
-    link: "https://afrique-avenir-immo.vercel.app",
+    // link: "https://afrique-avenir-immo.vercel.app",
+    link: "https://afriqueavenirimmobilier.com",
   },
   {
     title: "Votre réseau, à portée de clic !",
