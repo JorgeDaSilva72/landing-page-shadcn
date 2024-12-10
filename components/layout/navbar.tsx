@@ -189,7 +189,7 @@ export const Navbar = () => {
                 <Image
                   src="/logo-topaz-enhance-coupe.jpeg"
                   alt="Logo"
-                  className="h-full w-full rounded-md object-cover"
+                  className="h-full w-full rounded-md object-contain"
                   width={600}
                   height={600}
                 />

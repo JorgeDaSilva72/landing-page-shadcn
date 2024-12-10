@@ -1,3 +1,4 @@
+"use client";
 import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
@@ -7,9 +8,19 @@ import {
   CardHeader,
   CardTitle,
   CardFooter,
+  CardDescription,
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 interface TeamProps {
   imageUrl: string;
   firstName: string;
@@ -202,7 +213,61 @@ export const TeamSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {/* Carousel pour petits écrans */}
+      <div className="block md:hidden">
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="relative w-[90%] mx-auto"
+        >
+          <CarouselContent>
+            {teamList.map(
+              (
+                { imageUrl, firstName, lastName, positions, socialNetworks },
+                index
+              ) => (
+                <CarouselItem key={index} className="px-4">
+                  <Card className="bg-muted/50 dark:bg-card">
+                    <CardHeader className="p-4">
+                      <Image
+                        src={imageUrl}
+                        alt={`${firstName} ${lastName}`}
+                        width={150}
+                        height={150}
+                        className="w-32 h-32 mx-auto rounded-full object-cover"
+                      />
+                      <CardTitle className="mt-4 text-center">
+                        {firstName}{" "}
+                        <span className="text-primary">{lastName}</span>
+                      </CardTitle>
+                      <CardDescription className="text-center">
+                        {positions.join(", ")}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex justify-center space-x-4 mt-4">
+                      {socialNetworks.map(({ name, url }, index) => (
+                        <Link
+                          key={index}
+                          href={url}
+                          target="_blank"
+                          className="hover:opacity-80 transition-all"
+                        >
+                          {socialIcon(name)}
+                        </Link>
+                      ))}
+                    </CardFooter>
+                  </Card>
+                </CarouselItem>
+              )
+            )}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+      {/* Affichage en grille pour les grands écrans */}
+      <div className="hidden md:grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {teamList.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },
