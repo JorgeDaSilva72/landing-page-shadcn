@@ -267,7 +267,7 @@ export const TeamSection = () => {
         </Carousel>
       </div>
       {/* Affichage en grille pour les grands écrans */}
-      <div className="hidden md:grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="hidden md:grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {teamList.map(
           (
             { imageUrl, firstName, lastName, positions, socialNetworks },

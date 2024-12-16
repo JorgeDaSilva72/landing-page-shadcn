@@ -48,14 +48,16 @@ const serviceList: ServiceProps[] = [
     description:
       "Avec Emploi Afrique, accédez aux meilleures offres d'emploi à travers l'Afrique. Découvrez des opportunités dans des secteurs en plein essor et trouvez l’emploi qui correspond à vos ambitions. Simple, rapide, et pensé pour les talents africains !",
     pro: 1,
-    link: "https://emploi-afrique.vercel.app/",
+    // link: "https://emploi-afrique.vercel.app/",
+    link: "https://afriqueaveniremplois.com/",
   },
   {
     title: "Opportunités d'Acquisition en Afrique",
     description:
       "Investissez en toute confiance en Afrique grâce à notre plateforme dédiée à l'acquisition d'entreprises innovantes.",
     pro: 1,
-    link: "https://afrique-avenir-acquisitions.vercel.app/",
+    // link: "https://afrique-avenir-acquisitions.vercel.app/",
+    link: "https://afriqueaveniracquisitions.com/",
   },
 ];
 
