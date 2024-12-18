@@ -296,7 +296,7 @@ export const CommunitySection = () => {
             <CardFooter>
               <Button asChild>
                 <a
-                  href="https://www.twitch.tv/"
+                  href="https://m.twitch.tv/afriqueavenir/home"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
