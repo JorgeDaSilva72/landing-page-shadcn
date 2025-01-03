@@ -30,34 +30,34 @@ const serviceList: ServiceProps[] = [
     link: "https://afriqueavenirimmobilier.com",
   },
   {
-    title: "Votre réseau, à portée de clic !",
+    title: "Cession et acquisition d'entreprises en Afrique",
     description:
-      "Découvrez les talents, les experts et les partenaires qui font avancer votre secteur. Grâce à notre annuaire professionnel, connectez-vous facilement aux acteurs clés de votre domaine, développez votre réseau et trouvez les contacts essentiels pour dynamiser vos projets et collaborations.",
-    pro: 0,
-    link: "https://annuaire-expert.vercel.app/",
+      "Investissez en toute confiance en Afrique grâce à notre plateforme dédiée à l'acquisition d'entreprises innovantes.",
+    pro: 1,
+    // link: "https://afrique-avenir-acquisitions.vercel.app/",
+    link: "https://afriqueaveniracquisitions.com/",
   },
   {
-    title: "Notre boutique officielle",
-    description:
-      "Ensemble, bâtissons l'avenir de l'Afrique : chaque achat soutient des projets de développement durable et d'impact local.",
-    pro: 0,
-    link: "https://jds-ecommerce.vercel.app/",
-  },
-  {
-    title: "Votre Carrière, Notre Mission.",
+    title: "Votre carrière, notre mission : l'emploi.",
     description:
       "Avec Emploi Afrique, accédez aux meilleures offres d'emploi à travers l'Afrique. Découvrez des opportunités dans des secteurs en plein essor et trouvez l’emploi qui correspond à vos ambitions. Simple, rapide, et pensé pour les talents africains !",
     pro: 1,
     // link: "https://emploi-afrique.vercel.app/",
     link: "https://afriqueaveniremplois.com/",
   },
+  // {
+  //   title: "Votre réseau, à portée de clic !",
+  //   description:
+  //     "Découvrez les talents, les experts et les partenaires qui font avancer votre secteur. Grâce à notre annuaire professionnel, connectez-vous facilement aux acteurs clés de votre domaine, développez votre réseau et trouvez les contacts essentiels pour dynamiser vos projets et collaborations.",
+  //   pro: 0,
+  //   link: "https://annuaire-expert.vercel.app/",
+  // },
   {
-    title: "Opportunités d'Acquisition en Afrique",
+    title: "Notre boutique officielle",
     description:
-      "Investissez en toute confiance en Afrique grâce à notre plateforme dédiée à l'acquisition d'entreprises innovantes.",
-    pro: 1,
-    // link: "https://afrique-avenir-acquisitions.vercel.app/",
-    link: "https://afriqueaveniracquisitions.com/",
+      "Ensemble, bâtissons l'avenir de l'Afrique : chaque achat soutient des projets de développement durable et d'impact local.",
+    pro: 0,
+    link: "https://jds-ecommerce.vercel.app/",
   },
 ];
 

@@ -83,21 +83,21 @@ const featureList: FeatureProps[] = [
     description: " Explorez une variété d'annonces immobilières en AFRIQUE.",
   },
   {
-    title: "Annuaire professionnel",
-    description: "Votre réseau, à portée de clic !",
+    title: "Cession et acquisition d'entreprises en Afrique",
+    description:
+      "L'Afrique Vous Attends : Simplifiez l'Acquisition d'Entreprises Locales.",
   },
+  {
+    title: "Votre carrière, notre mission : l'emploi.",
+    description: "Découvrez l’Avenir de l’Emploi en Afrique. ",
+  },
+  // {
+  //   title: "Annuaire professionnel",
+  //   description: "Votre réseau, à portée de clic !",
+  // },
   {
     title: "Boutique officielle",
     description: "Merci de supporter notre projet.",
-  },
-  {
-    title: "Votre Carrière, Notre Mission.",
-    description: "Découvrez l’Avenir de l’Emploi en Afrique. ",
-  },
-  {
-    title: "Opportunités d'Acquisition en Afrique",
-    description:
-      "L'Afrique Vous Attends : Simplifiez l'Acquisition d'Entreprises Locales.",
   },
 ];
 
