@@ -9,6 +9,7 @@ import { icons } from "lucide-react";
 import TopWave from "./topWave";
 import BottomWave from "./bottomWave";
 import Image from "next/image";
+import Link from "next/link";
 // interface sponsorsProps {
 //   icon: string;
 //   name: string;
@@ -40,33 +41,40 @@ import Image from "next/image";
 interface SponsorsProps {
   image: string; // URL de l'image
   name: string;
+  link: string; // Lien du sponsor
 }
 
 const sponsors: SponsorsProps[] = [
   {
     image: "/lws.png", // Chemin de l'image pour LWS
     name: "LWS",
+    link: "https://www.lws.fr",
   },
   {
     image: "/qonto.png", // Chemin de l'image pour QONTO
     name: "QONTO",
+    link: "https://www.qonto.com",
   },
   {
     image: "/pub.png", // Placeholder pour une publicité personnalisée
     name: "Votre publicité ici",
+    link: "#",
   },
   {
     image: "/revolut.png", // Chemin de l'image pour REVOLUT
     name: "REVOLUT",
+    link: "https://www.revolut.com",
   },
 
   {
     image: "/goopy_368x63.jpg", // Exemple d'une autre image
     name: "GOOPY",
+    link: "https://www.goopy.fr",
   },
   {
     image: "/pub.png", // Placeholder pour une publicité personnalisée
     name: "Votre publicité ici",
+    link: "#",
   },
 ];
 export const SponsorsSection = () => {
@@ -103,20 +111,23 @@ export const SponsorsSection = () => {
               {name}
             </div>
           ))} */}
-          {sponsors.map(({ image, name }) => (
-            <div
+          {sponsors.map(({ image, name, link }) => (
+            <Link
+              href={link}
               key={name}
+              target="_blank" // Ouvre dans un nouvel onglet
+              rel="noopener noreferrer" // Sécurise le lien
               className="flex flex-col items-center text-xl md:text-2xl font-medium"
             >
               <div className="w-64 h-64 relative">
                 <Image src={image} alt={name} fill className="object-contain" />
               </div>
-              {/* <span>{name}</span> */}
-            </div>
+              {/* <span className="mt-2">{name}</span> */}
+            </Link>
           ))}
         </Marquee>
       </div>
-      <div className="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+      {/* <div className="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
         {ads.map((ad, index) => (
           <AdBanner
             key={index}
@@ -125,7 +136,7 @@ export const SponsorsSection = () => {
             altText={ad.altText}
           />
         ))}
-      </div>
+      </div> */}
       <BottomWave />
     </section>
   );
