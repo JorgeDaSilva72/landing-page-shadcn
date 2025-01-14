@@ -8,42 +8,67 @@ import "@devnomic/marquee/dist/index.css";
 import { icons } from "lucide-react";
 import TopWave from "./topWave";
 import BottomWave from "./bottomWave";
-interface sponsorsProps {
-  icon: string;
+import Image from "next/image";
+// interface sponsorsProps {
+//   icon: string;
+//   name: string;
+// }
+
+// const sponsors: sponsorsProps[] = [
+//   {
+//     icon: "Crown",
+//     name: "LWS",
+//   },
+//   {
+//     icon: "Vegan",
+//     name: "QONTO",
+//   },
+//   {
+//     icon: "Ghost",
+//     name: "REVOLUT",
+//   },
+//   {
+//     icon: "Puzzle",
+//     name: "Votre publicité ici ",
+//   },
+//   {
+//     icon: "Squirrel",
+//     name: "Goopy ",
+//   },
+// ];
+
+interface SponsorsProps {
+  image: string; // URL de l'image
   name: string;
 }
 
-const sponsors: sponsorsProps[] = [
+const sponsors: SponsorsProps[] = [
   {
-    icon: "Crown",
-    name: "World Bank",
+    image: "/lws.png", // Chemin de l'image pour LWS
+    name: "LWS",
   },
   {
-    icon: "Vegan",
-    name: "FMI",
+    image: "/qonto.png", // Chemin de l'image pour QONTO
+    name: "QONTO",
   },
   {
-    icon: "Ghost",
-    name: "UE",
+    image: "/pub.png", // Placeholder pour une publicité personnalisée
+    name: "Votre publicité ici",
   },
   {
-    icon: "Puzzle",
-    name: "Google ",
+    image: "/revolut.png", // Chemin de l'image pour REVOLUT
+    name: "REVOLUT",
+  },
+
+  {
+    image: "/goopy_368x63.jpg", // Exemple d'une autre image
+    name: "GOOPY",
   },
   {
-    icon: "Squirrel",
-    name: "Microsoft ",
-  },
-  {
-    icon: "Cookie",
-    name: "IBM ",
-  },
-  {
-    icon: "Drama",
-    name: "Coca-Cola Africa Foundation",
+    image: "/pub.png", // Placeholder pour une publicité personnalisée
+    name: "Votre publicité ici",
   },
 ];
-
 export const SponsorsSection = () => {
   return (
     <section
@@ -64,7 +89,7 @@ export const SponsorsSection = () => {
           pauseOnHover={true}
           innerClassName="gap-[3rem]"
         >
-          {sponsors.map(({ icon, name }) => (
+          {/* {sponsors.map(({ icon, name }) => (
             <div
               key={name}
               className="flex items-center text-xl md:text-2xl font-medium"
@@ -76,6 +101,17 @@ export const SponsorsSection = () => {
                 className="mr-2"
               />
               {name}
+            </div>
+          ))} */}
+          {sponsors.map(({ image, name }) => (
+            <div
+              key={name}
+              className="flex flex-col items-center text-xl md:text-2xl font-medium"
+            >
+              <div className="w-64 h-64 relative">
+                <Image src={image} alt={name} fill className="object-contain" />
+              </div>
+              {/* <span>{name}</span> */}
             </div>
           ))}
         </Marquee>
