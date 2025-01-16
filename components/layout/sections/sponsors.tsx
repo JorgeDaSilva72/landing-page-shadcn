@@ -53,7 +53,7 @@ const sponsors: SponsorsProps[] = [
   {
     image: "/qonto.png", // Chemin de l'image pour QONTO
     name: "QONTO",
-    link: "https://www.qonto.com",
+    link: "https://qonto.com/fr/r/388uto",
   },
   {
     image: "/pub.png", // Placeholder pour une publicité personnalisée
@@ -119,7 +119,7 @@ export const SponsorsSection = () => {
               rel="noopener noreferrer" // Sécurise le lien
               className="flex flex-col items-center text-xl md:text-2xl font-medium"
             >
-              <div className="w-64 h-64 relative">
+              <div className="w-32 h-32 relative">
                 <Image src={image} alt={name} fill className="object-contain" />
               </div>
               {/* <span className="mt-2">{name}</span> */}
