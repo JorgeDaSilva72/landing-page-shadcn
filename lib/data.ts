@@ -6,7 +6,7 @@ export const ads = [
   },
   {
     imageUrl: "/qonto.png",
-    linkUrl: "https://qonto.com",
+    linkUrl: "https://qonto.com/fr/r/388uto",
     altText: "quonto",
   },
 
