@@ -84,13 +84,13 @@ export const SponsorsSection = () => {
       className="relative mt-1 max-w-[75%] mx-auto  py-24 sm:py-28 pb-40"
     >
       <TopWave />
-      <h2 className=" mt-2 mb-6 text-3xl md:text-4xl text-primary text-center  tracking-wider ">
+      {/* <h2 className=" mt-2 mb-6 text-3xl md:text-4xl text-primary text-center  tracking-wider ">
         NOS SPONSORS
-      </h2>
+      </h2> */}
 
       <div className="mx-auto">
         <Marquee
-          className="gap-[3rem] [--duration:8s]"
+          className="gap-[1rem] [--duration:8s]"
           fade={true}
           direction="left"
           reverse={false}
