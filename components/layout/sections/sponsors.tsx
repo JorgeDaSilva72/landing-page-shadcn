@@ -46,6 +46,16 @@ interface SponsorsProps {
 
 const sponsors: SponsorsProps[] = [
   {
+    image: "/la siesta.png", // Chemin de l'image pour LWS
+    name: "LA SIESTA",
+    link: "https://villas-riads-marrakech.com/evenements/lieux-de-reception/la-siesta/?_gl=1*1uki3i2*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjws-S-BhD2ARIsALssG0bELo0zvqRMN_P_v3_7wxHh3mURwguczkiXzxshj04GirtShbtU5pUaAqndEALw_wcB",
+  },
+  {
+    image: "/kasbah.png", // Chemin de l'image pour LWS
+    name: "KASBAH LINAH",
+    link: "https://villas-riads-marrakech.com/evenements/lieux-de-reception/kasbah-linah/",
+  },
+  {
     image: "/lws.png", // Chemin de l'image pour LWS
     name: "LWS",
     link: "https://www.lws.fr",
@@ -61,6 +71,12 @@ const sponsors: SponsorsProps[] = [
     link: "#",
   },
   {
+    image: "/Orange.png", // Chemin de l'image pour QONTO
+    name: "ORANGE",
+    link: "",
+  },
+
+  {
     image: "/revolut.png", // Chemin de l'image pour REVOLUT
     name: "REVOLUT",
     link: "https://www.revolut.com",
@@ -70,11 +86,6 @@ const sponsors: SponsorsProps[] = [
     image: "/goopy_368x63.jpg", // Exemple d'une autre image
     name: "GOOPY",
     link: "https://www.goopy.fr",
-  },
-  {
-    image: "/pub.png", // Placeholder pour une publicité personnalisée
-    name: "Votre publicité ici",
-    link: "#",
   },
 ];
 export const SponsorsSection = () => {
