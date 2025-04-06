@@ -46,14 +46,19 @@ interface SponsorsProps {
 
 const sponsors: SponsorsProps[] = [
   {
-    image: "/la siesta.png", // Chemin de l'image pour LWS
+    image: "/la siesta.png",
     name: "LA SIESTA",
     link: "https://villas-riads-marrakech.com/evenements/lieux-de-reception/la-siesta/?_gl=1*1uki3i2*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjws-S-BhD2ARIsALssG0bELo0zvqRMN_P_v3_7wxHh3mURwguczkiXzxshj04GirtShbtU5pUaAqndEALw_wcB",
   },
   {
-    image: "/kasbah.png", // Chemin de l'image pour LWS
+    image: "/kasbah.png",
     name: "KASBAH LINAH",
     link: "https://villas-riads-marrakech.com/evenements/lieux-de-reception/kasbah-linah/",
+  },
+  {
+    image: "/igh.png",
+    name: "IGH",
+    link: "https://igh-immo.tn/",
   },
   {
     image: "/lws.png", // Chemin de l'image pour LWS
