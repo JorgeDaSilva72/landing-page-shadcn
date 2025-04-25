@@ -28,7 +28,7 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
+    image: "/testimonial/Amina Diallo.jpg",
     name: "Amina Diallo",
     userName: "Médecin ",
     comment:
@@ -36,7 +36,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "/kwame Mensah.jpg",
+    image: "/testimonial/kwame Mensah.jpg",
     name: "Kwame Mensah",
     userName: "Ingénieur ",
     comment:
@@ -45,7 +45,7 @@ const reviewList: ReviewProps[] = [
   },
 
   {
-    image: "https://github.com/shadcn.png",
+    image: "/testimonial/Fatoumata Diop.jpg",
     name: "Fatoumata Diop",
     userName: "Avocate",
     comment:
@@ -53,7 +53,7 @@ const reviewList: ReviewProps[] = [
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/testimonial/Tunde Adebayo.jpg",
     name: "Tunde Adebayo ",
     userName: "Banquier",
     comment:
@@ -61,7 +61,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/testimonial/Nia Nkrumah.jpg",
     name: "Nia Nkrumah",
     userName: "Professeure d'université",
     comment:
@@ -69,7 +69,7 @@ const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/testimonial/Lamine Cissé.jpg",
     name: "Lamine Cissé",
     userName: "Entrepreneur",
     comment:
