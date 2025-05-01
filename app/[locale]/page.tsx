@@ -7,7 +7,6 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import Contact from "@/components/layout/sections/contact";
 import { TeamSection } from "@/components/layout/sections/team";
 import { CommunitySection } from "@/components/layout/sections/community";
-import MapSection from "@/components/layout/sections/map";
 
 export default function Home() {
   return (

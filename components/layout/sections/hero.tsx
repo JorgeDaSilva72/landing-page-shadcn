@@ -235,8 +235,6 @@
 import { ArrowDown } from "lucide-react"; // Flèche vers le bas
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import AfriqueAvenirLogo from "@/public/AFRIQUE AVENIR.svg"; // Import du SVG en tant que composant React
 export const HeroSection = () => {
   const { theme } = useTheme();
 
