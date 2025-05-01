@@ -129,5 +129,39 @@
     "description": "Rejoignez notre dynamique communauté Twitch ! Connectez-vous, partagez et grandissez avec des passionnés partageant les mêmes idées.🚀",
     "buttonText": "Rejoindre Twitch",
     "buttonAriaLabel": "Rejoindre la communauté Twitch d'Afrique Avenir"
+  },
+  "FAQSection": {
+    "title": "FOIRE AUX QUESTIONS",
+    "subtitle": "Retrouvez les réponses aux questions les plus fréquemment posées.",
+    "questions": {
+      "item-1": {
+        "question": "Pouvez-vous m'aider à vivre en Afrique ?",
+        "answer": "Le site est entièrement conçu par des expatriés en Afrique, pour les expatriés. Nous faisons de notre mieux pour aider ceux qui souhaitent vivre en Afrique."
+      },
+      "item-2": {
+        "question": "Pouvez-vous m'aider à obtenir un visa ?",
+        "answer": "Non. La meilleure façon d'obtenir un visa est de commencer par rendre visite à l'ambassade ou le consulat du pays qui vous intéresse."
+      },
+      "item-3": {
+        "question": "Est-il possible de promouvoir mon entreprise et mes services sur AFRIQUE AVENIR ?",
+        "answer": "Oui. Nous pouvons vous proposer différentes solutions locales ou globales. N'hésitez pas à nous contacter pour en savoir plus."
+      },
+      "item-4": {
+        "question": "Comment contacter l'équipe ?",
+        "answer": "Vous pouvez utiliser notre formulaire de contact."
+      }
+    }
+  },
+  "Contact": {
+    "title": "CONTACTEZ-NOUS",
+    "subtitle": "Une question ?\nNotre équipe se tient à votre disposition.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès!",
+    "fail": "Échec de l'envoi du message.",
+    "validationError": "Erreur de validation des champs."
   }
 }

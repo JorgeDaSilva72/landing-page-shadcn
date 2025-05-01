@@ -129,5 +129,39 @@
     "description": "Join our dynamic Twitch community! Connect, share and grow with like-minded enthusiasts.🚀",
     "buttonText": "Join Twitch",
     "buttonAriaLabel": "Join Afrique Avenir's Twitch community"
+  },
+  "FAQSection": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "subtitle": "Find answers to the most frequently asked questions.",
+    "questions": {
+      "item-1": {
+        "question": "Can you help me live in Africa?",
+        "answer": "The site is entirely designed by expatriates in Africa, for expatriates. We do our best to help those who wish to live in Africa."
+      },
+      "item-2": {
+        "question": "Can you help me get a visa?",
+        "answer": "No. The best way to get a visa is to start by visiting the embassy or consulate of the country you're interested in."
+      },
+      "item-3": {
+        "question": "Is it possible to promote my business and services on AFRIQUE AVENIR?",
+        "answer": "Yes. We can offer you different local or global solutions. Feel free to contact us to learn more."
+      },
+      "item-4": {
+        "question": "How to contact the team?",
+        "answer": "You can use our contact form."
+      }
+    }
+  },
+  "Contact": {
+    "title": "CONTACT US",
+    "subtitle": "Have a question?\nOur team is here to help you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "fail": "Failed to send the message.",
+    "validationError": "Field validation error."
   }
 }
