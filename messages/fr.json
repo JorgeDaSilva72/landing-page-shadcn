@@ -163,5 +163,21 @@
     "success": "Message envoyé avec succès!",
     "fail": "Échec de l'envoi du message.",
     "validationError": "Erreur de validation des champs."
+  },
+  "Footer": {
+    "logoAlt": "Logo de l'entreprise",
+    "companyName": "AFRIQUE AVENIR",
+    "sections": {
+      "contact": "Contact",
+      "platforms": "Plateformes",
+      "help": "Aide",
+      "socialMedia": "Réseaux sociaux"
+    },
+    "links": {
+      "contactUs": "Nous contacter",
+      "feedback": "Feedback"
+    },
+    "copyright": "© 2024 Conçu et développé par",
+    "developerName": "Jorge Da Silva"
   }
 }
