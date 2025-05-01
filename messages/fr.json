@@ -1,4 +1,34 @@
 {
+  "Navbar": {
+    "brandName": "AFRIQUE AVENIR",
+    "logoAlt": "Logo de l'entreprise",
+    "servicesMenu": "Services",
+    "routes": {
+      "services": "Services",
+      "testimonials": "Témoignages",
+      "team": "Équipe",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "features": {
+      "realEstate": {
+        "title": "Annonces immobilières",
+        "description": "Explorez une variété d'annonces immobilières en AFRIQUE."
+      },
+      "businessTransfer": {
+        "title": "Cession et acquisition d'entreprises en Afrique",
+        "description": "L'Afrique Vous Attend : Simplifiez l'Acquisition d'Entreprises Locales."
+      },
+      "jobs": {
+        "title": "Votre carrière, notre mission : l'emploi.",
+        "description": "Découvrez l'Avenir de l'Emploi en Afrique."
+      },
+      "store": {
+        "title": "Boutique officielle",
+        "description": "Merci de supporter notre projet."
+      }
+    }
+  },
   "ServicesSection": {
     "title": "NOS SERVICES",
     "subtitle": "Développez votre entreprise",

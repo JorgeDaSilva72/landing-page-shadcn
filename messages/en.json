@@ -1,4 +1,34 @@
 {
+  "Navbar": {
+    "brandName": "AFRIQUE AVENIR",
+    "logoAlt": "Company logo",
+    "servicesMenu": "Services",
+    "routes": {
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "team": "Team",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "features": {
+      "realEstate": {
+        "title": "Real estate listings",
+        "description": "Explore a variety of real estate listings in AFRICA."
+      },
+      "businessTransfer": {
+        "title": "Business transfer and acquisition in Africa",
+        "description": "Africa Awaits You: Simplify Local Business Acquisition."
+      },
+      "jobs": {
+        "title": "Your career, our mission: employment.",
+        "description": "Discover the Future of Employment in Africa."
+      },
+      "store": {
+        "title": "Official store",
+        "description": "Thank you for supporting our project."
+      }
+    }
+  },
   "ServicesSection": {
     "title": "OUR SERVICES",
     "subtitle": "Grow your business",
