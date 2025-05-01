@@ -261,6 +261,7 @@ import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
 import { LanguageSwitcher } from "../LanguageSwitcher";
 import { useTranslations } from "next-intl";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const t = useTranslations("Navbar");
@@ -364,7 +365,10 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
-              <ToggleTheme />
+              {/* <ToggleTheme /> */}
+              <ThemeToggle />
+              <Separator className="mb-2" />
+              <LanguageSwitcher />
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -420,7 +424,8 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="hidden lg:flex">
-        <ToggleTheme />
+        {/* <ToggleTheme /> */}
+        <ThemeToggle />
         <LanguageSwitcher />
       </div>
     </header>
