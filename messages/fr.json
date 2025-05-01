@@ -98,5 +98,27 @@
         "comment": "Afrique Avenir est une mine d'or pour quiconque souhaite comprendre les défis et les opportunités en Afrique. Les analyses sont pertinentes et les solutions proposées sont innovantes. Félicitations !"
       }
     }
+  },
+  "Team": {
+    "title": "NOTRE ÉQUIPE",
+    "subtitle": "Rencontrez l'équipe qui donne vie à vos ambitions !",
+    "positions": {
+      "ceo": "Directeur Général",
+      "ceoTitle": "CEO",
+      "cto": "Directeur Technique",
+      "ctoTitle": "CTO",
+      "cfo": "Directeur Financier",
+      "cfoTitle": "CFO",
+      "cmo": "Directeur Marketing",
+      "cmoTitle": "CMO",
+      "chro": "Directeur des Ressources Humaines",
+      "chroTitle": "CHRO",
+      "cso": "Directeur Commercial",
+      "csoTitle": "CSO",
+      "coo": "Directeur des Opérations",
+      "cooTitle": "COO",
+      "clo": "Directeur Juridique",
+      "cloTitle": "CLO"
+    }
   }
 }

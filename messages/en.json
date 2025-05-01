@@ -98,5 +98,27 @@
         "comment": "Afrique Avenir is a goldmine for anyone who wants to understand the challenges and opportunities in Africa. The analyses are relevant and the proposed solutions are innovative. Congratulations!"
       }
     }
+  },
+  "Team": {
+    "title": "OUR TEAM",
+    "subtitle": "Meet the team that brings your ambitions to life!",
+    "positions": {
+      "ceo": "Chief Executive Officer",
+      "ceoTitle": "CEO",
+      "cto": "Chief Technology Officer",
+      "ctoTitle": "CTO",
+      "cfo": "Chief Financial Officer",
+      "cfoTitle": "CFO",
+      "cmo": "Chief Marketing Officer",
+      "cmoTitle": "CMO",
+      "chro": "Chief Human Resources Officer",
+      "chroTitle": "CHRO",
+      "cso": "Chief Sales Officer",
+      "csoTitle": "CSO",
+      "coo": "Chief Operating Officer",
+      "cooTitle": "COO",
+      "clo": "Chief Legal Officer",
+      "cloTitle": "CLO"
+    }
   }
 }
