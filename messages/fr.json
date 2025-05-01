@@ -29,6 +29,14 @@
       }
     }
   },
+  "HeroSection": {
+    "discover": "Découvrez",
+    "description": "L'avenir de l'Afrique : innovations, opportunités et inspirations pour bâtir un continent prospère.",
+    "startButton": "Commençons",
+    "startButtonAria": "Commencer l'exploration",
+    "logoAlt": "Logo AFRIQUE AVENIR",
+    "sponsorNotFoundWarning": "Element avec l'ID 'sponsors' non trouvé"
+  },
   "ServicesSection": {
     "title": "NOS SERVICES",
     "subtitle": "Développez votre entreprise",

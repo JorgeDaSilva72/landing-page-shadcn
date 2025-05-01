@@ -29,6 +29,14 @@
       }
     }
   },
+  "HeroSection": {
+    "discover": "Discover",
+    "description": "The future of Africa: innovations, opportunities and inspirations to build a prosperous continent.",
+    "startButton": "Let's start",
+    "startButtonAria": "Start exploring",
+    "logoAlt": "AFRIQUE AVENIR logo",
+    "sponsorNotFoundWarning": "Element with ID 'sponsors' not found"
+  },
   "ServicesSection": {
     "title": "OUR SERVICES",
     "subtitle": "Grow your business",
