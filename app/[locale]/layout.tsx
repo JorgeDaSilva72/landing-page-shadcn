@@ -58,7 +58,11 @@ export default async function RootLayout({
 
   const messages = await getMessages({ locale });
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      // dir={locale === "ar" ? "rtl" : "ltr"}
+      suppressHydrationWarning
+    >
       <head>
         <meta charSet="UTF-8" />
       </head>

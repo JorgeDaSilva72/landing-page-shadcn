@@ -13,6 +13,7 @@ type LocaleKey = string;
 const FLAG_IMAGES: Record<LocaleKey, string> = {
   en: "/flags/gb.svg",
   fr: "/flags/fr.svg",
+  ar: "/flags/ar.svg",
   es: "/flags/es.svg",
   de: "/flags/de.svg",
   it: "/flags/it.svg",
@@ -22,6 +23,7 @@ const FLAG_IMAGES: Record<LocaleKey, string> = {
 const LANGUAGE_NAMES: Record<LocaleKey, string> = {
   en: "English",
   fr: "Français",
+  ar: "العربية",
   es: "Español",
   de: "Deutsch",
   it: "Italiano",
