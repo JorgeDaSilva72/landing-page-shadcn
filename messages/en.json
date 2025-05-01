@@ -62,5 +62,41 @@
         "description": "Together, let's build Africa's future: every purchase supports sustainable development and local impact projects."
       }
     }
+  },
+  "TestimonialSection": {
+    "title": "TESTIMONIALS",
+    "subtitle": "See what our 1,000+ clients say about us.",
+    "reviews": {
+      "amina": {
+        "name": "Amina Diallo",
+        "profession": "Doctor",
+        "comment": "Afrique Avenir is a true source of inspiration and information. I find new and innovative perspectives for the development of our continent there. Well done!"
+      },
+      "kwame": {
+        "name": "Kwame Mensah",
+        "profession": "Engineer",
+        "comment": "The Afrique Avenir website is fantastic! It highlights incredible initiatives and offers an optimistic vision of Africa's future. Keep up the excellent work!"
+      },
+      "fatoumata": {
+        "name": "Fatoumata Diop",
+        "profession": "Lawyer",
+        "comment": "I'm impressed by the wealth of content on Afrique Avenir. It's an essential resource for anyone interested in Africa's evolution and progress."
+      },
+      "tunde": {
+        "name": "Tunde Adebayo",
+        "profession": "Banker",
+        "comment": "Afrique Avenir provides an excellent overview of development opportunities in Africa. The articles are well-written and the topics very relevant. A site to recommend!"
+      },
+      "nia": {
+        "name": "Nia Nkrumah",
+        "profession": "University Professor",
+        "comment": "I love Afrique Avenir! The site offers inspiring articles and success stories that show the enormous potential of our continent. Thank you for this great platform!"
+      },
+      "lamine": {
+        "name": "Lamine Cissé",
+        "profession": "Entrepreneur",
+        "comment": "Afrique Avenir is a goldmine for anyone who wants to understand the challenges and opportunities in Africa. The analyses are relevant and the proposed solutions are innovative. Congratulations!"
+      }
+    }
   }
 }

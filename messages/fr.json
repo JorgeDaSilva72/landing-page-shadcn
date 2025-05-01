@@ -62,5 +62,41 @@
         "description": "Ensemble, bâtissons l'avenir de l'Afrique : chaque achat soutient des projets de développement durable et d'impact local."
       }
     }
+  },
+  "TestimonialSection": {
+    "title": "TEMOIGNAGES",
+    "subtitle": "Lisez ce que disent nos 1 000 + clients.",
+    "reviews": {
+      "amina": {
+        "name": "Amina Diallo",
+        "profession": "Médecin",
+        "comment": "Afrique Avenir est une véritable source d'inspiration et d'information. J'y trouve des perspectives nouvelles et innovantes pour le développement de notre continent. Bravo"
+      },
+      "kwame": {
+        "name": "Kwame Mensah",
+        "profession": "Ingénieur",
+        "comment": "Le site Afrique Avenir est fantastique ! Il met en lumière des initiatives incroyables et offre une vision optimiste de l'avenir de l'Afrique. Continuez votre excellent travail !"
+      },
+      "fatoumata": {
+        "name": "Fatoumata Diop",
+        "profession": "Avocate",
+        "comment": "Je suis impressionnée par la richesse des contenus sur Afrique Avenir. C'est une ressource incontournable pour tous ceux qui s'intéressent à l'évolution et au progrès de l'Afrique."
+      },
+      "tunde": {
+        "name": "Tunde Adebayo",
+        "profession": "Banquier",
+        "comment": "Afrique Avenir offre un excellent aperçu des opportunités de développement en Afrique. Les articles sont bien rédigés et les sujets très pertinents. Un site à recommander !"
+      },
+      "nia": {
+        "name": "Nia Nkrumah",
+        "profession": "Professeure d'université",
+        "comment": "J'adore Afrique Avenir ! Le site propose des articles inspirants et des histoires de réussite qui montrent le potentiel énorme de notre continent. Merci pour cette belle plateforme !"
+      },
+      "lamine": {
+        "name": "Lamine Cissé",
+        "profession": "Entrepreneur",
+        "comment": "Afrique Avenir est une mine d'or pour quiconque souhaite comprendre les défis et les opportunités en Afrique. Les analyses sont pertinentes et les solutions proposées sont innovantes. Félicitations !"
+      }
+    }
   }
 }
