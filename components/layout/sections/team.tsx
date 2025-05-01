@@ -324,7 +324,7 @@
 //   );
 // };
 
-// BEGIN 27/04/2025 compatible next-intl
+// BEGIN 01/05/2025 compatible next-intl
 
 "use client";
 

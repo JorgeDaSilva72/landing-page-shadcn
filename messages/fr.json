@@ -120,5 +120,14 @@
       "clo": "Directeur Juridique",
       "cloTitle": "CLO"
     }
+  },
+  "CommunitySection": {
+    "title": {
+      "part1": "Prêt à rejoindre la",
+      "part2": "communauté ?"
+    },
+    "description": "Rejoignez notre dynamique communauté Twitch ! Connectez-vous, partagez et grandissez avec des passionnés partageant les mêmes idées.🚀",
+    "buttonText": "Rejoindre Twitch",
+    "buttonAriaLabel": "Rejoindre la communauté Twitch d'Afrique Avenir"
   }
 }

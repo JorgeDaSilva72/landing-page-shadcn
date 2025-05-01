@@ -120,5 +120,14 @@
       "clo": "Chief Legal Officer",
       "cloTitle": "CLO"
     }
+  },
+  "CommunitySection": {
+    "title": {
+      "part1": "Ready to join the",
+      "part2": "community ?"
+    },
+    "description": "Join our dynamic Twitch community! Connect, share and grow with like-minded enthusiasts.🚀",
+    "buttonText": "Join Twitch",
+    "buttonAriaLabel": "Join Afrique Avenir's Twitch community"
   }
 }
