@@ -28,11 +28,20 @@ export async function generateMetadata({
   const { locale } = resolvedParams;
 
   return {
-    title: locale === "fr" ? "AFRIQUE AVENIR" : "AFRIQUE AVENIR",
+    title:
+      locale === "fr"
+        ? "AFRIQUE AVENIR"
+        : locale === "ar"
+        ? "AFRIQUE AVENIR" // Titre en arabe
+        : "AFRIQUE AVENIR", // Titre par défaut en anglais
+
     description:
       locale === "fr"
         ? "Page d'accueil d'AFRIQUE AVENIR"
-        : "Home page AFRIQUE AVENIR",
+        : locale === "ar"
+        ? "الصفحة الرئيسية لأفريقيا أفينير" // Description en arabe
+        : "Home page AFRIQUE AVENIR", // Description par défaut en anglais
+
     icons: {
       icon: "/favicon.ico",
     },
@@ -60,7 +69,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      // dir={locale === "ar" ? "rtl" : "ltr"}
+      dir={locale === "ar" ? "rtl" : "ltr"}
       suppressHydrationWarning
     >
       <head>
