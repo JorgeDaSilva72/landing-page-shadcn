@@ -843,9 +843,13 @@ export const Navbar = () => {
       <div className="flex items-center lg:hidden z-50">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" aria-label="Menu">
-              <Menu className="h-5 w-5" />
-            </Button>
+            {/* <Button variant="ghost" size="icon" aria-label="Menu">
+               <Menu className="h-5 w-5" />
+             </Button> */}
+            <Menu
+              onClick={() => setIsOpen(!isOpen)}
+              className="cursor-pointer lg:hidden"
+            />
           </SheetTrigger>
 
           <SheetContent
