@@ -843,9 +843,6 @@ export const Navbar = () => {
       <div className="flex items-center lg:hidden z-50">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            {/* <Button variant="ghost" size="icon" aria-label="Menu">
-               <Menu className="h-5 w-5" />
-             </Button> */}
             <Menu
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer lg:hidden"
@@ -888,9 +885,9 @@ export const Navbar = () => {
               </div>
 
               <Separator className="mb-4" />
-              <SheetHeader className="px-2 mb-2">
+              {/* <SheetHeader className="px-2 mb-2">
                 <SheetTitle>{t("servicesMenu")}</SheetTitle>
-              </SheetHeader>
+              </SheetHeader> */}
 
               <div className="flex flex-col gap-1 px-1 pb-4">
                 {/* Menu Services avec accordéon */}
