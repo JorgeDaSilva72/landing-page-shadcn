@@ -9,14 +9,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
-
-// export const metadata: Metadata = {
-//   title: "AFRIQUE AVENIR",
-//   description: "Page d'accueil d'AFRIQUE AVENIR ",
-//   icons: {
-//     icon: "/favicon.ico", // Chemin vers ton favicon
-//   },
-// };
+import BackToTop from "@/components/BackTotop";
 
 export async function generateMetadata({
   params,
@@ -86,7 +79,7 @@ export default async function RootLayout({
             <Navbar />
 
             {children}
-            {/* <BackToTop /> */}
+            <BackToTop />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

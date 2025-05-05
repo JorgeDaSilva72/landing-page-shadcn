@@ -258,7 +258,6 @@ import {
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { ToggleTheme } from "./toogle-theme";
 import { LanguageSwitcher } from "../LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { ThemeToggle } from "./ThemeToggle";
