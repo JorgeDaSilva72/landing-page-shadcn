@@ -179,5 +179,10 @@
     },
     "copyright": "© 2024 Designed and developed by",
     "developerName": "Jorge Da Silva"
+  },
+  "UnderConstruction": {
+    "title": "Under Construction",
+    "description": "This service will be available soon. We are actively working on its development.",
+    "backButton": "Back to Home"
   }
 }

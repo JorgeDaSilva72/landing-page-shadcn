@@ -179,5 +179,10 @@
     },
     "copyright": "© 2024 Conçu et développé par",
     "developerName": "Jorge Da Silva"
+  },
+  "UnderConstruction": {
+    "title": "Site en construction",
+    "description": "Ce service sera bientôt disponible. Nous travaillons activement à son développement.",
+    "backButton": "Retour à l'accueil"
   }
 }

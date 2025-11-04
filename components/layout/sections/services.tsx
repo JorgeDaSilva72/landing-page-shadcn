@@ -163,6 +163,7 @@ interface ServiceProps {
   pro: ProService;
   description: string;
   link: string;
+  isExternal?: boolean; // Nouveau champ pour différencier les liens externes
 }
 
 export const ServicesSection = () => {
@@ -174,24 +175,31 @@ export const ServicesSection = () => {
       description: t("services.realEstate.description"),
       pro: 1,
       link: "https://afriqueavenirimmobilier.com",
+      isExternal: true,
     },
     {
       title: t("services.businessTransfer.title"),
       description: t("services.businessTransfer.description"),
       pro: 1,
-      link: "https://afriqueaveniracquisitions.com/",
+      // link: "https://afriqueaveniracquisitions.com/",
+      link: "/under-construction", // Lien vers la page en construction
+      isExternal: false,
     },
     {
       title: t("services.jobs.title"),
       description: t("services.jobs.description"),
       pro: 1,
-      link: "https://afriqueaveniremplois.com/",
+      // link: "https://afriqueaveniremplois.com/",
+      link: "https://job-board-sass-nextjs.vercel.app/fr",
+      isExternal: true,
     },
     {
       title: t("services.store.title"),
       description: t("services.store.description"),
       pro: 0,
-      link: "https://jds-ecommerce.vercel.app/",
+      // link: "https://jds-ecommerce.vercel.app/",
+      link: "/under-construction", // Lien vers la page en construction
+      isExternal: false,
     },
   ];
 
@@ -221,7 +229,7 @@ export const ServicesSection = () => {
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
-        {serviceList.map(({ title, description, pro, link }) => (
+        {serviceList.map(({ title, description, pro, link, isExternal }) => (
           <Card
             key={title}
             className="bg-muted/60 dark:bg-card h-full relative flex flex-col"
@@ -233,7 +241,8 @@ export const ServicesSection = () => {
             <div className="mt-auto mb-4 px-4">
               <CardDescription>
                 <Link
-                  target="_blank"
+                  // target="_blank"
+                  target={isExternal ? "_blank" : undefined}
                   href={link}
                   className="transition-all border-primary hover:border-b-2 ml-1 no-underline"
                 >

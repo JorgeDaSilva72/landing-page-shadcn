@@ -179,5 +179,10 @@
     },
     "copyright": "© 2024 صممه وطورّه",
     "developerName": "Jorge Da Silva"
+  },
+  "UnderConstruction": {
+    "title": "الموقع قيد الإنشاء",
+    "description": "ستكون هذه الخدمة متاحة قريبًا. نحن نعمل بنشاط على تطويرها.",
+    "backButton": "العودة إلى الصفحة الرئيسية"
   }
 }
