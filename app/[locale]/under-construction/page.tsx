@@ -1,9 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Construction } from "lucide-react";
 import Link from "next/link";
 
 export default function UnderConstructionPage() {
   const t = useTranslations("UnderConstruction");
+  const locale = useLocale();
 
   return (
     <div className="container flex flex-col items-center justify-center min-h-screen py-12">
@@ -13,7 +14,7 @@ export default function UnderConstructionPage() {
         {t("description")}
       </p>
       <Link
-        href="/"
+        href={`/${locale}`}
         className="inline-flex justify-center py-2 px-6 border border-primary shadow-sm text-sm font-medium rounded-md bg-primary hover:bg-primary/90 transition-colors"
       >
         {t("backButton")}

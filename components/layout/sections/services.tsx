@@ -151,7 +151,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 enum ProService {
   YES = 1,
@@ -168,6 +168,7 @@ interface ServiceProps {
 
 export const ServicesSection = () => {
   const t = useTranslations("ServicesSection");
+  const locale = useLocale();
 
   const serviceList: ServiceProps[] = [
     {
@@ -182,7 +183,7 @@ export const ServicesSection = () => {
       description: t("services.businessTransfer.description"),
       pro: 1,
       // link: "https://afriqueaveniracquisitions.com/",
-      link: "/under-construction", // Lien vers la page en construction
+      link: `/${locale}/under-construction`, // Lien vers la page en construction
       isExternal: false,
     },
     {
@@ -198,7 +199,7 @@ export const ServicesSection = () => {
       description: t("services.store.description"),
       pro: 0,
       // link: "https://jds-ecommerce.vercel.app/",
-      link: "/under-construction", // Lien vers la page en construction
+      link: `/${locale}/under-construction`, // Lien vers la page en construction
       isExternal: false,
     },
   ];
